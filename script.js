@@ -9,7 +9,7 @@ const ramos = [
   { id: "FIS1001", nombre: "FISICA MECANICA", semestre: 2, prerequisitos: ["MAT1001"], creditos: 5 },
   { id: "MAT1002", nombre: "CALCULO DIFERENCIAL E INTEGRAL", semestre: 2, prerequisitos: ["MAT1001"], creditos: 6 },
   { id: "MAT1004", nombre: "ALGEBRA LINEAL", semestre: 2, prerequisitos: ["MAT1001"], creditos: 4 },
-  { id: "QUI1140", nombre: "FUNDAMENTOS DE QUIMICA", semestre: 2, prerequisitos: [""], creditos: 4 },
+  { id: "QUI1140", nombre: "FUNDAMENTOS DE QUIMICA", semestre: 2, prerequisitos: [], creditos: 4 },
 
   { id: "EIE100", nombre: "PROGRAMACION", semestre: 3, prerequisitos: [], creditos: 4 },
   { id: "EIE211", nombre: "ESTADISTICA Y PROBABILIDADES PARA INGENIERIA", semestre: 3, prerequisitos: ["MAT1002"], creditos: 3 },
