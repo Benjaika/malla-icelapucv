@@ -113,7 +113,7 @@ function toggleConfetti() {
 
 function renderMalla() {
   contenedor.innerHTML = "";
-  for (let s = 1; s <= 10; s++) {
+  for (let s = 1; s <= 11; s++) {
     const semestre = document.createElement("div");
     semestre.className = "semestre"; // 👈 Añade esta línea
     semestre.innerHTML = `<h2>${s}° Semestre</h2>`;
