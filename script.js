@@ -1,13 +1,9 @@
 // Lista de ramos con sus prerrequisitos
 const ramos = [
-  { id: "hpt", nombre: "HISTORIA DEL PENSAMIENTO POLÍTICO Y TEORÍA DEL ESTADO", semestre: 1, prerequisitos: [], creditos: 4  },
-  { id: "fpb", nombre: "FUENTES, PROCESO Y BIENES EN EL DERECHO ROMANO", semestre: 1, prerequisitos: [], creditos: 3 },
-  { id: "hdam", nombre: "HISTORIA DEL DERECHO ANTIGUO Y MEDIEVAL", semestre: 1, prerequisitos: [], creditos: 3  },
-  { id: "ffp", nombre: "FUNDAMENTOS DE FILOSOFÍA PRÁCTICA", semestre: 1, prerequisitos: [], creditos: 3 },
-  { id: "iedpc", nombre: "INTRODUCCIÓN AL ESTUDIO DEL DERECHO POSITIVO CHILENO", semestre: 1, prerequisitos: [], creditos: 3 },
-  { id: "tm1", nombre: "TALLER DE MEMORIA 1", semestre: 1, prerequisitos: [], creditos: 1 },
-  { id: "ing1", nombre: "INGLÉS 1", semestre: 1, prerequisitos: [], creditos: 2 },
-  { id: "antro", nombre: "ANTROPOLOGÍA CRISTIANA", semestre: 1, prerequisitos: [], creditos: 2 },
+  { id: "EIE142", nombre: "INTRODUCCION A LA INGENIERIA ELECTRICA Y ELECTRONICA", semestre: 1, prerequisitos: [], creditos: 4  },
+  { id: "FIN100-11", nombre: "DESARROLLO INTEGRAL Y COMUNICACION PARA INGENIERIA", semestre: 1, prerequisitos: [], creditos: 3 },
+  { id: "FIS1121", nombre: "INTRODUCCION A LA FISICA", semestre: 1, prerequisitos: [], creditos: 3  },
+  { id: "MAT1001", nombre: "FUNDAMENTOS DE MATEMATICAS PARA INGENIERIA", semestre: 1, prerequisitos: [], creditos: 3 },
 
   { id: "tchpcch", nombre: "TEORIA DE LA CONSTITUCION E HISTORIA POLITICA Y CONSTITUCIONAL DE CHILE", semestre: 2, prerequisitos: ["hpt"], creditos: 4 },
   { id: "fpdr", nombre: "FAMILIA Y PATRIMONIO EN EL DERECHO ROMANO", semestre: 2, prerequisitos: ["fpb"], creditos: 4 },
