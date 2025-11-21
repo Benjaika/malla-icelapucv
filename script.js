@@ -1,9 +1,9 @@
 // Lista de ramos con sus prerrequisitos
 const ramos = [
-  { id: "EIE142", nombre: "INTRODUCCION A LA INGENIERIA ELECTRICA Y ELECTRONICA", semestre: 1, prerequisitos: [], creditos: 4  },
+  { id: "EIE142", nombre: "INTRODUCCION A LA INGENIERIA ELECTRICA Y ELECTRONICA", semestre: 1, prerequisitos: [], creditos: 3  },
   { id: "FIN100-11", nombre: "DESARROLLO INTEGRAL Y COMUNICACION PARA INGENIERIA", semestre: 1, prerequisitos: [], creditos: 3 },
-  { id: "FIS1121", nombre: "INTRODUCCION A LA FISICA", semestre: 1, prerequisitos: [], creditos: 3  },
-  { id: "MAT1001", nombre: "FUNDAMENTOS DE MATEMATICAS PARA INGENIERIA", semestre: 1, prerequisitos: [], creditos: 3 },
+  { id: "FIS1121", nombre: "INTRODUCCION A LA FISICA", semestre: 1, prerequisitos: [], creditos: 5  },
+  { id: "MAT1001", nombre: "FUNDAMENTOS DE MATEMATICAS PARA INGENIERIA", semestre: 1, prerequisitos: [], creditos: 6 },
 
   { id: "tchpcch", nombre: "TEORIA DE LA CONSTITUCION E HISTORIA POLITICA Y CONSTITUCIONAL DE CHILE", semestre: 2, prerequisitos: ["hpt"], creditos: 4 },
   { id: "fpdr", nombre: "FAMILIA Y PATRIMONIO EN EL DERECHO ROMANO", semestre: 2, prerequisitos: ["fpb"], creditos: 4 },
