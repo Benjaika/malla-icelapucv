@@ -1,0 +1,334 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background-color: #fff8fa;
+    color: #333;
+    padding: 15px;
+    position: relative;
+    overflow-x: hidden;
+    
+}
+
+h1 {
+      text-align: center;
+    color: #cc0077;
+    clear: both;
+    margin-top: 20px;
+}
+
+#malla-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+.semestre {
+  min-width: 220px;
+  background-color: #ffe4ec;
+  border: 2px solid #f48fb1;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.semestre h2 {
+    text-align: center;
+  color: #ad1457;
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #f8bbd0;
+  padding-bottom: 6px;
+}
+.course {
+   background: linear-gradient(145deg, #f8bbd0, #ec9fb9);
+  border: 1px solid #c2185b;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #880e4f;
+  font-weight: 600;
+  /* Sombra para efecto 3D */
+  box-shadow: 4px 4px 8px #c28aa2, -4px -4px 8px #ffcee1;
+  transition: all 0.3s ease;
+  user-select: none;
+
+}
+.course:active {
+    box-shadow: inset 3px 3px 5px #b67288, inset -3px -3px 5px #ffbed4;
+    transform: translateY(1px);
+}
+.course:hover {
+    background: linear-gradient(145deg, #f48fb1, #e47c9d);
+    box-shadow: 6px 6px 10px #b67288, -6px -6px 10px #ffbed4;
+    color: #fff;
+    border-color: #cc0077;
+    transform: translateY(-3px);
+}
+.course.locked {
+    background-color: #f3f3f3;
+    color: #999;
+    border-style: dashed;
+    cursor: not-allowed;
+    box-shadow: none;
+    background: none;
+}
+
+.course.approved {
+    background: linear-gradient(145deg, #9c4f8f, #974f7a) !important;
+    color: #5b1745;
+    border-color: #6a1b9a;
+    text-decoration: line-through;
+    font-style: italic;
+    box-shadow: 4px 4px 8px #a0788f, -4px -4px 8px #ac7e99;
+}
+
+#confetti {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: auto;
+    pointer-events: none;
+    display: none;
+    z-index: 9999;
+}
+
+#confetti-toggle-btn {
+    float: right;
+    margin: 10px 0 0px 10px;
+    background-color: #ffd3ec;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confetti-toggle-btn:hover {
+    background-color: #f48fb1;
+}
+
+/*video*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark-mode-width:45px;
+    --dark-mode-height:25px;
+}
+
+
+.tema-oscuro{
+    float: right;
+    margin: 14px 0 10px 10px;
+    width: var(--dark-mode-width);
+    height: var(--dark-mode-height);
+    display: flex;
+    align-items: center;
+    border-radius: 999px;
+    background-color: #DFDEDE;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+body.dark-mode .tema-oscuro{
+    background-color: white;
+}
+.tema-oscuro .circle{
+    width: 40%;
+    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    transform: translateX(10%);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease,background-colo 0.5s ease;
+}
+body.dark-mode .circle{
+    transform: translateX(140%);
+    background-color: #2A2A2C;
+}
+.tema-oscuro .circle ion-icon{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+.tema-oscuro .circle .moon{
+    color: white;
+    transform: translateY(-120%);
+}
+body.dark-mode .circle .moon{
+    transform: translateX(0);
+}
+.tema-oscuro .circle .sun{
+    color: #FCDE5B;
+}
+body.dark-mode .circle .sun{
+    transform: translateY(120%);
+}
+
+/*cierre video*/
+
+
+#reset-btn {
+    float: right;
+    margin: 10px 0 10px 10px;
+    background-color: #ffb3d9;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-btn:hover {
+    background-color: #cc0077;
+}
+
+
+body.dark-mode {
+    background-color: #1e1e2f;
+    color: #eee;
+}
+
+body.dark-mode h1 {
+    color: #ffd4fa;
+}
+
+body.dark-mode .semestre {
+    background-color: #302b3f;
+    border-color: #4e3d5a;
+}
+body.dark-mode .semestre h2 {
+    color: #eaa3ff;
+}
+
+body.dark-mode .course {
+    background-color: #5a4164;
+    border-color: #a64fcf;
+    color: #f5f5f5;
+    box-shadow: none;
+}
+
+/* Curso desbloqueado específicamente (ni locked ni aprobado) */
+body.dark-mode .course:not(.locked):not(.approved) {
+    background-color: #3b264c !important; /* más oscuro */
+}
+
+
+body.dark-mode .course.locked {
+    background-color: #4b3c52;
+    border-color: #666;
+    color: #999;
+}
+
+body.dark-mode .course.approved {
+       background: #2e1f3a !important;
+    color: #514465 !important;
+    border-color: #935dd6 !important;
+}
+body.dark-mode .course:not(.locked):not(.approved) {
+   background: #5e3e78 !important;
+    color: #e0d5f1 !important;
+    border-color: #935dd6 !important;
+}
+
+#logo {
+    float: left;
+    height: 60px;
+    margin: 10px 10px 10px 0;
+}
+
+.footer-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+}
+
+.footer-icon-wrapper {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.footer-icon {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+}
+
+.light-only { display: inline; }
+.dark-only { display: none; }
+
+body.dark-mode .light-only { display: none; }
+body.dark-mode .dark-only { display: inline; }
+
+#footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+#footer a {
+  color: #cc0077;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+  color: #aa005f;
+}
+
+body.dark-mode #footer {
+  color: #777;
+  border-top: 1px solid #444;
+}
+
+body.dark-mode #footer a {
+  color: #e08ff4;
+}
+
+body.dark-mode #footer a:hover {
+  color: #ffbde0;
+}
+
+#creditos-aprobados {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #cc0077;
+}
+
+body.dark-mode #creditos-aprobados {
+  color: #d28ff4;
+}
+
+.footer-extra {
+  font-size: 0.75rem;
+  color: #bf76a3;
+  margin-top: 6px;
+  text-align: center;
+    font-weight: normal; /* 👈 esto quita la negrita */
+
+}
+
+body.dark-mode .footer-extra {
+  color: #616161;
+}
